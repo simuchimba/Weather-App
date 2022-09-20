@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /* background-position: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Luxurious Roman', cursive;
+}
+
+.container {
+    /* height: 90vh; */
+    width: 40vw;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container .title {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.container .input {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .input input {
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: none;
+}
+
+.container .input input::placeholder {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.container .input button {
+    margin-left: 1rem;
+    width: 20%;
+    padding: 10px;
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.15s all ease;
+}
+
+.container #content {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.container #content #content .location {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container #content #content .location .city {
+    margin-left: 1rem;
+}
+
+.container #content #content .location .state {
+    margin-left: 1rem;
+}
+
+.container #content #content .weather {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container #content #content .weather .weatherTitle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container #content #content .weather .weatherTitle .icon {
+    width: 95px;
+    height: 100px;
+}
+
+.container #content #content .weather .weatherTitle .icon img {
+    height: 100px;
+}
+
+.container #content #content .values {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp,
+.humidity,
+.wind,
+.uv {
+    margin-top: 1rem;
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+
+.container #content #content .values hr {
+    width: 80%;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.container #content #content .values .temp sup {
+    font-size: 1rem;
+}
